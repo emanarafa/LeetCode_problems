@@ -2,8 +2,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Permutations_II_47 {
-    
-    public  List<List<Integer>> permute(int[] nums) {
+
+    public  List<List<Integer>> permuteUnique(int[] nums) {
         boolean[]used=new boolean[nums.length];
         ArrayList<Integer>permutation=new ArrayList<>();
         List<List<Integer>>res=new ArrayList<>();
