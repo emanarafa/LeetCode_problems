@@ -11,7 +11,7 @@ public class Permutations_II_47 {
     }
     public   List<List<Integer>> backTrackPermut(int[]nums, ArrayList<Integer> permutation, boolean[]used,List<List<Integer>>res){
         if (permutation.size()==nums.length){
-           res.add(new ArrayList<>(permutation));
+            if(!res.contains(permutation)) res.add(new ArrayList<>(permutation));
              return res;
         }
         for (int i=0;i<nums.length;i++){
